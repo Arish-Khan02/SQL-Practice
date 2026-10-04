@@ -4,5 +4,5 @@ FROM (
     SELECT num
     FROM MyNumbers
     GROUP BY num
-    HAVING COUNT(*) < 2
+    HAVING COUNT(*) = 1
 ) AS single_num;
